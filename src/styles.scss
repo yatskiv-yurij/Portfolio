@@ -1,1 +1,84 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
+
+*, *::after, a::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #282C33;
+    color: #ABB2BF;
+    font-family: 'Fira Code', monospace;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #ABB2BF;
+    text-decoration: none;
+
+    &:hover{
+        color: #fff
+    }
+}
+
+.simple__text{
+    font-size: 16px;
+    color: #ABB2BF;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+
+    span{
+        color: #C778DD;
+    }
+
+    &::after{
+        position: absolute;
+        content: '';
+        width: 200%;
+        height: 1px;
+        left: calc(100% + 16px);
+        top: calc(50% - 0.5px);
+        background-color: #C778DD;
+    }
+}
+.title__page{
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+
+    span{
+        color: #C778DD;
+    }
+}
+
+.button{
+    display: block;
+    padding: 8px 16px;
+    border: 1px solid #C778DD;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    width: max-content;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+
+    &:hover{
+        background-color: rgba(199, 120, 221, 0.20);
+    }
+}

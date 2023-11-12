@@ -1,0 +1,50 @@
+.about-me{
+    margin: 50px 0 150px 0;
+
+    &__title{
+        margin-bottom: 14px;
+    }
+
+    &__skills, &__facts{
+        margin-top: 100px;
+    }
+
+    &__skills-items{
+        margin-top: 50px;
+        display: flex;
+        gap: 15px;
+    }
+
+    &__facts{
+        position: relative;
+    }
+
+    &__facts-items{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 60%;
+    }
+
+    &__fact{
+        padding: 8px;
+        border: 1px solid #ABB2BF;
+    }
+
+    img{
+        position: absolute;
+        transform: translateY(-50%);
+
+        &.dots{
+            right: 15%;
+            top: 40%;
+            width: 7%;
+        }
+        &.figure{
+            right: 4%;
+            top: 90%;
+            width: 12%;
+        }
+    }
+}

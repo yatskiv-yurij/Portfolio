@@ -1,0 +1,95 @@
+.header{
+    margin-top: 60px;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content{
+        width: 50%;
+    }
+
+    &__title{
+        font-size: 36px;
+        font-weight: 600;
+        color: #fff;
+
+        span{
+            color: #C778DD;
+        }
+    }
+
+    &__text{
+        margin-top: 32px;
+    }
+
+    &__contact{
+        margin-top: 24px;
+    }
+
+    &__my-image{
+        position: relative;
+        width: 45%;
+
+        &::before{
+            position: absolute;
+            content: '';
+            background-image: url('/assets/images/figure.svg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 35%;
+            height: 35%;
+            top: 20%;
+            left: 10px;
+            z-index: -1;
+        }
+
+        &::after{
+            position: absolute;
+            content: '';
+            background-image: url('/assets/images/dots.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 15%;
+            height: 15%;
+            bottom: 30%;
+            right: 10px;
+            z-index: 2;
+        }
+    }
+
+    &__photo{
+        width: 100%;
+        height: auto;
+    }
+
+    &__work-going{
+        border: 1px solid #ABB2BF;
+        transform: translate(18px,-5px);
+        width: 88%;
+        padding: 8px 34px;
+
+        p{
+            margin-top: 0;
+            position: relative;
+
+            span{
+                font-weight: 600;
+                color: #fff
+            }
+
+            &::before{
+                position: absolute;
+                content: '';
+                width: 16px;
+                height: 16px;
+                top: 50%;
+                left: -24px;
+                background-color: #C778DD;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

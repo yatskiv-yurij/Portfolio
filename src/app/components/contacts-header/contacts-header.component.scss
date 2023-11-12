@@ -1,0 +1,58 @@
+.contacts{
+    &__wrapper{
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 10px;
+    }
+
+    &__text{
+        width: 50%;
+    }
+
+    &__data{
+        width: 300px;
+        border: 1px solid #ABB2BF;
+        padding: 16px;
+    }
+
+    &__message{
+        color: #fff;
+        margin-bottom: 16px;
+    }
+
+    &__item + &__item{
+        margin-top: 8px;
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #ABB2BF;
+        transition: .3s ease-in-out;
+
+        span{
+            margin-left: 5px;
+        }
+
+        &:hover{
+            color: #fff;
+
+            svg path{
+                fill: #FFFFFF;
+            }
+        }
+    }
+
+    &__instagram{
+        margin: 0 4px 0 4px;
+    }
+}
+
+.support-me{
+    width: 200px;
+    border: 1px solid #ABB2BF;
+    padding: 16px;
+}

@@ -1,0 +1,25 @@
+.projects{
+    margin: 50px 0 150px 0;
+
+    &__title{
+        margin-bottom: 14px;
+    }
+
+    &__complete{
+        margin-top: 60px;
+    }
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        gap: 20px
+    }
+
+    &__sub-title{
+        margin-bottom: 40px;
+    }
+
+    &__small{
+        margin-top: 80px;
+    }
+}

@@ -1,0 +1,35 @@
+.project{
+    border: 1px solid #ABB2BF;
+
+    &__image{
+        width: 100%;
+        height: auto;
+    }
+
+    &__technologies{
+        margin: 0;
+        padding: 8px;
+        border-top: 1px solid #ABB2BF;
+        border-bottom: 1px solid #ABB2BF;
+        transform: translateY(-6px);
+        
+        span + span{
+            margin-left: 8px;
+        }
+    }
+
+    &__content{
+        padding: 16px;
+    }
+
+    &__title{
+        font-size: 24px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 16px;
+    }
+
+    &__description{
+        margin-bottom: 16px;
+    }
+}
